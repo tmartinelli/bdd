@@ -16,7 +16,7 @@ Given /^the secret code is "([^"]*)"$/ do |secret|
 end
 
 When /^I guess "([^"]*)"$/ do |guess|
-  @game.guess = guess
+  @game.guess(guess)
 end
 
 Then /^the mark should be "([^"]*)"$/ do |mark|
